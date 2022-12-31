@@ -1,37 +1,55 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
-.header{
-text-align: center;
-border-bottom: 1px solid black;
-background-image: linear-gradient(to right, lightblue , darkblue);
-color: white;
-padding: 25px;
-text-shadow: 1px 1px black;
+.header {
+  text-align: center;
+  border-bottom: 1px solid black;
+  background-image: linear-gradient(to right, lightblue, darkblue);
+  color: white;
+  padding: 25px;
+  text-shadow: 1px 1px black;
 }
 
-h1{
-    margin: 0;
+h1 {
+  margin: 0;
 }
- 
-.local{
-float: left;
-font-size: 1.5rem;/* temporary */
-margin-right: 20px;
-padding: 20px;
-height: 100vh;
-width: 15%;
-border-right:1px solid black ;
+
+.local {
+  float: left;
+  font-size: 1.5rem; /* temporary */
+  margin-right: 20px;
+  padding: 20px;
+  height: 100vh;
+  width: 15%;
+  border-right: 1px solid black;
 }
 
 #searchbar {
-    border-bottom: 2px solid black;
-    padding-bottom: 15px;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
 }
 
-.weather{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+.weather {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.cityButton{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+  justify-content: space-evenly;
+}
+
+.cityButton button{
+  font-size: 1.1rem;
+  width: 60%;
+}
+
+.cityButton button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.2);
 }
