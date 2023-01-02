@@ -17,7 +17,7 @@ N/A
 
 ## Usage
 
-Select a city in the side bar or type one in. Defaults to last viewed.
+Select a city in the side bar or type one in. Defaults to last viewed held in local storage.
 
 ![weather service screenshot](./assets/images/WeatherServiceScreenshot.JPG)
 
