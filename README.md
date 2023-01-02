@@ -19,6 +19,8 @@ N/A
 
 Select a city in the side bar or type one in. Defaults to Richmond, VA.
 
+https://bryandalton.github.io/Weather-service/
+
 ## Credits
 
 Bryan Dalton
@@ -26,4 +28,4 @@ https://github.com/Bryandalton
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+N/A
