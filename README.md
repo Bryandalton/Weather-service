@@ -19,6 +19,8 @@ N/A
 
 Select a city in the side bar or type one in. Defaults to Richmond, VA.
 
+![weather service screenshot](./assets/images/WeatherServiceScreenshot.JPG)
+
 https://bryandalton.github.io/Weather-service/
 
 ## Credits
