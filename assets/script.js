@@ -5,7 +5,7 @@ var temp = document.querySelector("#temp");
 var wind = document.querySelector("#wind");
 var humidity = document.querySelector("#humidity");
 var clouds = document.querySelector("#clouds");
-var searchBar = document.querySelector("#searchBar");
+var searchBtn = document.querySelector("#searchBtn");
 var searchInput = document.querySelector("#searchInput");
 var cityButtons = document.querySelector(".cityButton");
 var forecastSection = document.querySelector(".forecast");
@@ -84,7 +84,7 @@ cityButtons.addEventListener("click", (event) => {
   console.log(local);
 });
 
-searchBar.addEventListener("click", () => {
+searchBtn.addEventListener("click", () => {
   local = searchInput.value.trim();
   console.log(searchInput.value);
   fetchWeather(local);
