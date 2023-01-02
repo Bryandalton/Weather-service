@@ -17,7 +17,7 @@ N/A
 
 ## Usage
 
-Select a city in the side bar or type one in. Defaults to Richmond, VA.
+Select a city in the side bar or type one in. Defaults to last viewed.
 
 ![weather service screenshot](./assets/images/WeatherServiceScreenshot.JPG)
 

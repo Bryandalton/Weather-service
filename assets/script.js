@@ -11,7 +11,7 @@ var cityButtons = document.querySelector(".cityButton");
 var forecastSection = document.querySelector(".forecast");
 var weatherData;
 
-function fetchWeather(local = "Richmond") {
+function fetchWeather(local = localStorage.getItem('lastViewed')) {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${local},us&APPID=${apiKey}`
   )
@@ -23,7 +23,7 @@ function fetchWeather(local = "Richmond") {
     });
 }
 
-function fetchForecast(local = "Richmond") {
+function fetchForecast(local = localStorage.getItem('lastViewed')) {
   fetch(
     `https://api.openweathermap.org/data/2.5/forecast?q=${local}&appid=${apiKey}`
   )
@@ -52,8 +52,6 @@ function fetchForecast(local = "Richmond") {
         wind.textContent = `Wind: ${forcastI.wind.speed}mph`;
       }
     });
-
-  new Date("MM/DD/YYYY");
 }
 fetchForecast();
 function weather() {
@@ -81,6 +79,7 @@ cityButtons.addEventListener("click", (event) => {
   fetchWeather(local);
   clearForecast();
   fetchForecast(local);
+  localStorage.setItem('lastViewed', local);
   console.log(local);
 });
 
@@ -89,5 +88,6 @@ searchBtn.addEventListener("click", () => {
   console.log(searchInput.value);
   fetchWeather(local);
   clearForecast();
+  localStorage.setItem('lastViewed', local);
   fetchForecast(local);
 });
