@@ -13,7 +13,7 @@ var weatherData;
 
 function fetchWeather(local = "Richmond") {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${local},us&APPID=${apiKey}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${local},us&APPID=${apiKey}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -25,7 +25,7 @@ function fetchWeather(local = "Richmond") {
 
 function fetchForecast(local = "Richmond") {
   fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${local}&appid=${apiKey}`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${local}&appid=${apiKey}`
   )
     .then((response) => response.json())
     .then((data) => {
